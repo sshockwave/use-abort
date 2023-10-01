@@ -2,9 +2,10 @@
   "name": "use-abort",
   "description": "React hook that uses AbortController for cancellable side effects",
   "version": "0.1.0",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.4",
+    "rollup": "^3.29.4"
+  },
   "peerDependencies": {
     "react": ">=16.8.0"
   },

@@ -4,10 +4,8 @@ export type AbortCallback = (signal: AbortSignal) => void;
 
 export default function useAbort(effect: AbortCallback, deps?: DependencyList) {
   useEffect(() => {
-    const abortController = new AbortController();
-    effect(abortController.signal);
-    return () => {
-      abortController.abort();
-    };
+    const controller = new AbortController;
+    effect(controller.signal);
+    return controller.abort.bind(controller);
   }, deps);
 }

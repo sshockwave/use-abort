@@ -12,9 +12,6 @@
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "files": [
-    "dist"
-  ],
   "peerDependencies": {
     "react": ">=16.8.0"
   },

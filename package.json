@@ -3,15 +3,25 @@
   "description": "React hook that uses AbortController for cancellable side effects",
   "version": "0.1.0",
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.4",
-    "rollup": "^3.29.4"
+    "@types/react": "^18.2.24",
+    "react": "^18.2.0",
+    "rollup": "^3.29.4",
+    "tslib": "^2.6.2"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "react": ">=16.8.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup --config"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sshockwave/use-abort.git"
